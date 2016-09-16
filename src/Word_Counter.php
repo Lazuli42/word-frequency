@@ -13,17 +13,17 @@
 
         function getSentence()
         {
-            return $this-> (string) $this->sentence;
+            return (string) $this->sentence;
         }
 
         function getMatches()
         {
-            return (number) $this->matches;
+            return $this->matches;
         }
 
         function find_match($word, $sentence, $partial_matches)
         {
-            $this->work = $word;
+            $this->word = $word;
             $this->sentence = $sentence;
 
             $word_lowercase = strtolower($word);

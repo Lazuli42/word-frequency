@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Word Frequency</title>
+</head>
+<body>
+    <div class="container text-center">
+        <h1>Word Frequenter</h1>
+        <h4>Instructions go here.</h4>
+        <form action="find_match">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label for="word">Enter the word you want to find.</label>
+                        <input name="word" type="text" class="form-control" id="word" required>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="sentence">Enter the sentence you want to check.</label>
+                        <input name="sentence" type="text" class="form-control" id="sentence" required>
+                    </div>
+                </div> <!-- end row -->
+                <div class="checkbox row">
+                  <label>
+                    <input name="partial_matches" type="checkbox" value="true" checked>
+                    Check for partial matches?
+                  </label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        {% if word_counter is not empty %}
+            {% if word_counter.getMatches == 1 %}
+            <h2>"{{word_counter.getWord}}" is in "{{word_counter.getSentence}}" {{word_counter.getMatches}} time.</h2>
+            {% else %}
+                <h2>"{{word_counter.getWord}}" is in "{{word_counter.getSentence}}" {{word_counter.getMatches}} times.</h2>
+            {% endif %}
+        {% endif %}
+    </div>
+</body>
+</html>
