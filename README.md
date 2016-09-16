@@ -20,28 +20,28 @@ _A web page that checks how often a word is used in a sentence._
 1. _Program can say that a word is used in a sentence once._
     - Input: "test" in "test"
     - Output: test is used 1 time.
-- _(Dev Note: The name and length of the string being tested doesn't matter, so i just used the work test. Because I'm testing. To keep things consistent, I looked for the word "test" in all of the following specs as well.)_
+    - _(Dev Note: The name and length of the string being tested doesn't matter, so i just used the work test. Because I'm testing. To keep things consistent, I looked for the word "test" in all of the following specs as well.)_
 
 2. _Ignores partial occurrences of a word._
     - Input: "test" in "testing"
     - Output: test is used 0 times.
-- _(Dev Note: Currently we only want to confirm the a word in the sentence matches the sought after word if they're exactly the same. I suspected I wouldn't have to write any more code than the first test, so I made it the second spec.)_
+    - _(Dev Note: Currently we only want to confirm the a word in the sentence matches the sought after word if they're exactly the same. I suspected I wouldn't have to write any more code than the first test, so I made it the second spec.)_
 
 3. _Counts the number of times a word is used in a sentence._
     - Input: "test" in "test the test for tests"
     - Output: test is used 2 times.
-- _(Dev Note: Next I wanted to find the word in the sentence multiple times, which would only require splitting the sentence into an array and running a for loop, so it's spec number 3.)_
+    - _(Dev Note: Next I wanted to find the word in the sentence multiple times, which would only require splitting the sentence into an array and running a for loop, so it's spec number 3.)_
 
 4. _User can choose to look for partial matches._
     - Input: "test" in "testing for tests" [Partial Matches: checked]
     - Output: test is used 2 times.
-- _(Dev Note: This was not necessary for the project, but I wanted to do it. Because it is both more complicated than the previous specs and not required for the project, I tested it after the basics were done.)_
+    - _(Dev Note: This was not necessary for the project, but I wanted to do it. Because it is both more complicated than the previous specs and not required for the project, I tested it after the basics were done.)_
 
 5. _Can find word in upper or lower case._
     - Input: "test" in "teST"
     - Output: test is used 1 time.
-- _(Dev Note: This spec, while necessary for a smooth user experience, was not crucial to the logic, so I did it last.)_
-- _(Dev Note: I forgot to commit after I wrote these. I did write all of these and then wrote the tests before I wrote any code, but I have no proof._ :expressionless: )
+    - _(Dev Note: This spec, while necessary for a smooth user experience, was not crucial to the logic, so I did it last.)_
+    - _(Dev Note: I forgot to commit after I wrote these. I did write all of these and then wrote the tests before I wrote any code, but I have no proof._ :expressionless: )
 
 ## Link to github pages
 
