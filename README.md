@@ -25,7 +25,7 @@ _A web page that checks how often a word is used in a sentence._
 2. _Ignores partial occurrences of a word._
     - Input: "test" in "testing"
     - Output: test is used 0 times.
-    - _(Dev Note: Currently we only want to confirm the a word in the sentence matches the sought after word if they're exactly the same. I suspected I wouldn't have to write any more code than the first test, so I made it the second spec.)_
+    - _(Dev Note: Currently I only want to confirm the a word in the sentence matches the sought after word if they're exactly the same. I suspected I wouldn't have to write any more code than the first test, so I made it the second spec.)_
 
 3. _Counts the number of times a word is used in a sentence._
     - Input: "test" in "test the test for tests"
