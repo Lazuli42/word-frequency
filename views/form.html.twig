@@ -8,7 +8,7 @@
     <div class="container text-center">
         <h1>Word Frequenter</h1>
         <h4>Instructions go here.</h4>
-        <form action="find_match">
+        <form action="CountRepeats">
             <div class="form-group">
                 <div class="row">
                     <div class="col-sm-6">
@@ -31,11 +31,11 @@
 
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-        {% if word_counter is not empty %}
-            {% if word_counter.getMatches == 1 %}
-            <h2>"{{word_counter.getWord}}" is in "{{word_counter.getSentence}}" {{word_counter.getMatches}} time.</h2>
+        {% if repeat_counter  is not empty %}
+            {% if repeat_counter.getMatches == 1 %}
+            <h2>"{{repeat_counter.getWord}}" is in "{{repeat_counter.getSentence}}" {{repeat_counter.getMatches}} time.</h2>
             {% else %}
-                <h2>"{{word_counter.getWord}}" is in "{{word_counter.getSentence}}" {{word_counter.getMatches}} times.</h2>
+                <h2>"{{repeat_counter.getWord}}" is in "{{repeat_counter.getSentence}}" {{repeat_counter.getMatches}} times.</h2>
             {% endif %}
         {% endif %}
     </div>

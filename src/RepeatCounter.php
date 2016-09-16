@@ -1,5 +1,5 @@
 <?php
-    class Word_Counter
+    class RepeatCounter
     {
 
         private $word;
@@ -21,9 +21,11 @@
             return $this->matches;
         }
 
-        function find_match($word, $sentence, $partial_matches)
+        function CountRepeats($word, $sentence, $partial_matches)
         {
-            $this->word = $word;
+            $word = chop($word);
+            $sentence = chop($sentence);
+            $this->word = ucfirst($word);
             $this->sentence = $sentence;
 
             $word_lowercase = strtolower($word);
